@@ -13,7 +13,7 @@
 ### 方式一：npm 一行命令（需先 `npm publish`）
 
 ```bash
-npx -y @deepseek-ai/dsh plugin --profile web add dsh-vision-bridge
+npx -y @deepseek-ai/dsh plugin --profile web add @jm2482589349/dsh-vision-bridge
 ```
 
 ### 方式二：Git 一键安装脚本（无需 npm 发布）

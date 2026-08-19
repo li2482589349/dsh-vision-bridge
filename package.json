@@ -1,5 +1,5 @@
 {
-  "name": "dsh-vision-bridge",
+  "name": "@jm2482589349/dsh-vision-bridge",
   "version": "1.0.0",
   "description": "Plug-in vision for text-only LLMs in DeepSeek Harness (dsh): paste any image, auto-classify its type (document/illustration/photo) and transcribe via any pi-ai vision route (default xiaomi/mimo-v2.5).",
   "type": "module",

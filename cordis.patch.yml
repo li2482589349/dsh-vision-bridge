@@ -4,4 +4,4 @@
 # row config in the deployment's own cordis.patch.yml.
 - insert:
     - id: vision-bridge
-      name: 'dsh-vision-bridge'
+      name: '@jm2482589349/dsh-vision-bridge'
