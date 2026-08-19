@@ -8,11 +8,21 @@
 
 实现为"包装适配器"：为纯文本模型生成 `(vision)` 变体（如 `DeepSeek-V4-Flash (vision)`），声明支持图片 → 上传准入放行；在请求时转成识别文本再委托回真实路由 → **历史保留图片缩略图**、回放走缓存不重复付费。
 
-## 安装（目标机一行命令）
+## 安装
+
+### 方式一：npm 一行命令（需先 `npm publish`）
 
 ```bash
 npx -y @deepseek-ai/dsh plugin --profile web add dsh-vision-bridge
 ```
+
+### 方式二：Git 一键安装脚本（无需 npm 发布）
+
+```powershell
+powershell -ExecutionPolicy Bypass -Command "irm https://raw.githubusercontent.com/li2482589349/dsh-vision-bridge/main/install.ps1 | iex"
+```
+
+脚本自动完成：克隆仓库 → 拷贝插件到 `$DSH_HOME\plugins\vision-bridge` → 写入 `cordis.patch.yml` 挂载行 → 打印视觉引擎 key 配置指引。
 
 ## 前置：配置一个视觉引擎（只需一次）
 
