@@ -1,0 +1,7 @@
+# dsh bundle layer: mount the vision-bridge plugin (dsh/index.mjs via the
+# package root export). Config defaults: families=[deepseek], mode=auto,
+# engine auto-discovered (any pi-ai route declaring image input), or pin with
+# row config in the deployment's own cordis.patch.yml.
+- insert:
+    - id: vision-bridge
+      name: 'dsh-vision-bridge'
